@@ -3,7 +3,8 @@
 # print "Hello World"
 
 sudo apt-get -y update
-sudo apt-get -y install nginx
+sudo apt-get  install -y  nginx
+sudo ufw allow 'Nginx HTTP'
+curl -4 curl 54.174.248.63
 echo 'Hello World!' > /var/www/html/index.nginx-debian.html
 sudo service nginx start
-curl 54.174.248.63
