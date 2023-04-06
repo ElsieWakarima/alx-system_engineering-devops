@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#This script uses site-available linked to site-enabled to solve port 80 issue
+
+rm /etc/nginx/sites-enabled/default
+ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+service nginx restart
+
