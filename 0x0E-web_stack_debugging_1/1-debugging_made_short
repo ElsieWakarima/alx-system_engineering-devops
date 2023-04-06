@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 #  nginx listens to port 80 only
 
-ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+rm /etc/nginx/sites-enabled/default
+ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 service nginx start
-kill "$(pgrep 'nginx' | head -1)"
+echo "" | sudo dd status=none of=/run/nginx.pid
 
