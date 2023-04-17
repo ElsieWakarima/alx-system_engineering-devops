@@ -1,7 +1,7 @@
 apt-get install ufw -y
+ufw enable
 ufw default deny incoming
 ufw default allow outgoing
 ufw allow 22
 ufw allow 443
 ufw allow 80
-ufw enable 
