@@ -1,3 +1,7 @@
+#!/usr/bin/env bash
+#bash to installs the 'ufw' firewall and,
+#rules on 'web-01'
+
 apt-get install ufw -y
 ufw default deny incoming
 ufw default allow outgoing
