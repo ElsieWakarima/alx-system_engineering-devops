@@ -1,5 +1,6 @@
 apt-get install ufw -y
-ufw enable
+ufw enable -y
 ufw allow ssh
 ufw allow http
 ufw allow https
+ufw status
