@@ -8,7 +8,6 @@ import csv
 import requests
 from sys import argv
 
-
 if __name__ == "__main__":
     url = "https://jsonplaceholder.typicode.com/users/{}".format(argv[1])
     employee = requests.get(url).json()
@@ -23,5 +22,3 @@ if __name__ == "__main__":
                 data = [employee.get('id'), employee.get('username'),
                         task.get('completed'), task.get('title')]
                 writer.writerow(data)
-                
-                
