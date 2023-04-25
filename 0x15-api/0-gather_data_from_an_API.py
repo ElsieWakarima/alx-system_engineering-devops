@@ -26,3 +26,4 @@ if __name__ == "__main__":
                                                           completed, total))
     for item in list_tasks:
         print("\t {}".format(item))
+        
