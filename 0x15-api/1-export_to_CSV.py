@@ -22,3 +22,4 @@ if __name__ == "__main__":
                 data = [employee.get('id'), employee.get('username'),
                         task.get('completed'), task.get('title')]
                 writer.writerow(data)
+                
