@@ -7,22 +7,12 @@ using a REST API, for a given employee ID,
 import requests
 import sys
 
-if __name__ == '__main__':
-    def get_employee_todo_progress(emp_id):
-        response = requests.get(f'https://jsonplaceholder.typicode.com/todos?userId={emp_id}')
-        if response.status_code == 200:
-            todo_data = response.json()
-            response = requests.get(f'https://jsonplaceholder.typicode.com/users/{emp_id}')
-            employee_data = response.json()
-            emp_name = employee_data['name']
-            num_completed_tasks = 0
-            for task in todo_data:
-                if task['completed']:
-                    num_completed_tasks += 1
-            total_tasks = len(todo_data)
-            print(f'Employee {emp_name} is done with {num_completed_tasks}/{total_tasks} tasks:')
-            for task in todo_data:
-                if task['completed']:
-                    print(f'\t{task["title"]}')
+if __name__ == "__main__":
+    url = "https://jsonplaceholder.typicode.com/"
+    user = requests.get(url + "users/{}".format(sys.argv[1])).json()
+    todos = requests.get(url + "todos", params={"userId": sys.argv[1]}).json()
 
-    get_employee_todo_progress(sys.argv[1])
+    completed = [t.get("title") for t in todos if t.get("completed") is True]
+    print("Employee {} is done with tasks({}/{}):".format(
+        user.get("name"), len(completed), len(todos)))
+    [print("\t {}".format(c)) for c in completed]
