@@ -3,6 +3,7 @@
 This script returns information about his/her TODO list progress
 using a REST API, for a given employee ID,
 """
+
 import csv
 import requests
 from sys import argv
@@ -22,4 +23,5 @@ if __name__ == "__main__":
                 data = [employee.get('id'), employee.get('username'),
                         task.get('completed'), task.get('title')]
                 writer.writerow(data)
+                
                 
