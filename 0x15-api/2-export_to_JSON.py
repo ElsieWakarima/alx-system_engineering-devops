@@ -7,7 +7,6 @@ import json
 import requests
 from sys import argv
 
-
 if __name__ == "__main__":
     url = "https://jsonplaceholder.typicode.com/users/{}".format(argv[1])
     employee = requests.get(url).json()
@@ -29,4 +28,3 @@ if __name__ == "__main__":
     with open('{}.json'.format(employee.get('id')), 'w',
               encoding='utf-8') as f:
         f.write(json.dumps(task_dict))
-        
