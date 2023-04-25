@@ -4,8 +4,7 @@ This script returns information about his/her TODO list progress
 using a REST API, for a given employee ID,
 """
 import requests
-from sys import argv
-
+import sys
 
 if __name__ == "__main__":
     url = "https://jsonplaceholder.typicode.com/users/{}".format(argv[1])
