@@ -15,3 +15,15 @@
 <summary><a href="./0-gather_data_from_an_API.py">0. Gather data from an API</a></summary><br>
 <a href='https://postimg.cc/N5NpbXMC' target='_blank'><img src='https://i.postimg.cc/8zG9pBVG/image.png' border='0' alt='image'/></a>
 </details>
+<details>
+<summary><a href="./1-export_to_CSV.py">0. Gather data from an API</a></summary><br>
+<a href='https://postimg.cc/N5NpbXMC' target='_blank'><img src='https://i.postimg.cc/8zG9pBVG/image.png' border='0' alt='image'/></a>
+</details>
+<details>
+<summary><a href="./2-export_to_JSON.py">0. Gather data from an API</a></summary><br>
+<a href='https://postimg.cc/N5NpbXMC' target='_blank'><img src='https://i.postimg.cc/8zG9pBVG/image.png' border='0' alt='image'/></a>
+</details>
+<details>
+<summary><a href="./3-dictionary_of_list_of_dictionaries.py">0. Gather data from an API</a></summary><br>
+<a href='https://postimg.cc/N5NpbXMC' target='_blank'><img src='https://i.postimg.cc/8zG9pBVG/image.png' border='0' alt='image'/></a>
+</details>
